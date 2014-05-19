@@ -1,0 +1,29 @@
+{
+    "name": "netcommons/rich-text-editor",
+    "description": "RichTextEditorPlugin for Cakephp",
+    "homepage": "http://www.netcommons.org/",
+    "require": {
+        "cakephp/cakephp":        "~2.4",
+        "cakephp/debug_kit":      "~2.2",
+        "cakedc/migrations":      "~2.2",
+        "twbs/bootstrap":         "~3.1",
+        "components/jquery":      "~2.1"
+    },
+    "require-dev": {
+        "ryu818/tiny-mce":        "dev-master",
+        "ryu818/html-purifier":   "dev-master",
+        "satooshi/php-coveralls": "dev-master"
+    },
+    "license": "NetCommons License",
+    "authors": [
+        {
+            "name": "NetCommons Community",
+            "homepage": "https://github.com/NetCommons3/RichTextEditor/graphs/contributors"
+        }
+    ],
+    "type":        "cakephp-plugin",
+    "keywords":    ["cakephp", "rich-text-editor"],
+    "config": {
+        "vendor-dir": "vendors"
+    }
+}
