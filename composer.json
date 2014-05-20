@@ -10,9 +10,9 @@
         "components/jquery":      "~2.1"
     },
     "require-dev": {
-        "ryu818/tiny-mce":        "dev-master",
-        "ryu818/html-purifier":   "dev-master",
-        "satooshi/php-coveralls": "dev-master"
+        "ryu818/tiny-mce":              "dev-myFeature",
+        "burzum/cakephp-html-purifier": "dev-myFeature",
+        "satooshi/php-coveralls":       "dev-master"
     },
     "license": "NetCommons License",
     "authors": [
