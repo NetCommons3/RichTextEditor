@@ -3,16 +3,16 @@
     "description": "RichTextEditorPlugin for Cakephp",
     "homepage": "http://www.netcommons.org/",
     "require": {
-        "cakephp/cakephp":        "~2.4",
-        "cakephp/debug_kit":      "~2.2",
-        "cakedc/migrations":      "~2.2",
-        "twbs/bootstrap":         "~3.1",
-        "components/jquery":      "~2.1"
+        "cakephp/cakephp":              "~2.4",
+        "cakephp/debug_kit":            "~2.2",
+        "cakedc/migrations":            "~2.2",
+        "twbs/bootstrap":               "~3.1",
+        "components/jquery":            "~2.1",
+        "ryu818/tiny-mce":              "~1.2",
+        "burzum/cakephp-html-purifier": "0.0.0"
     },
     "require-dev": {
-        "ryu818/tiny-mce":              "dev-myFeature",
-        "burzum/cakephp-html-purifier": "dev-myFeature",
-        "satooshi/php-coveralls":       "dev-master"
+        "satooshi/php-coveralls": "dev-master"
     },
     "license": "NetCommons License",
     "authors": [

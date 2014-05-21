@@ -3,8 +3,55 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "e83e53ae1cbf6114b4979b346a29def6",
+    "hash": "a7d8c1db9382010049a14f6554c1dd06",
     "packages": [
+        {
+            "name": "burzum/cakephp-html-purifier",
+            "version": "0.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ryu818/cakephp-html-purifier.git",
+                "reference": "bb3c231657f3d84880bfd4d62d36c3724630bdf4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ryu818/cakephp-html-purifier/zipball/bb3c231657f3d84880bfd4d62d36c3724630bdf4",
+                "reference": "bb3c231657f3d84880bfd4d62d36c3724630bdf4",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "*",
+                "ezyang/htmlpurifier": "*",
+                "php": ">=5.3.2"
+            },
+            "type": "cakephp-plugin",
+            "extra": {
+                "installer-name": "HtmlPurifier"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Florian Krämer",
+                    "email": "florian.kraemer@kreative-design.net",
+                    "homepage": "http://florian-kraemer.net",
+                    "role": "Author"
+                }
+            ],
+            "description": "HtmlPurifier plugin for CakePHP",
+            "homepage": "http://github.com/burzum/cakephp-html-purifier",
+            "keywords": [
+                "Purifier",
+                "html",
+                "markup",
+                "sensitization",
+                "tidy",
+                "validation"
+            ],
+            "time": "2014-05-20 09:29:26"
+        },
         {
             "name": "cakedc/migrations",
             "version": "2.3.0",
@@ -266,6 +313,51 @@
             "time": "2014-04-09 16:12:43"
         },
         {
+            "name": "ezyang/htmlpurifier",
+            "version": "v4.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ezyang/htmlpurifier.git",
+                "reference": "6f389f0f25b90d0b495308efcfa073981177f0fd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ezyang/htmlpurifier/zipball/6f389f0f25b90d0b495308efcfa073981177f0fd",
+                "reference": "6f389f0f25b90d0b495308efcfa073981177f0fd",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "HTMLPurifier": "library/"
+                },
+                "files": [
+                    "library/HTMLPurifier.composer.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL"
+            ],
+            "authors": [
+                {
+                    "name": "Edward Z. Yang",
+                    "email": "admin@htmlpurifier.org",
+                    "homepage": "http://ezyang.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Standards compliant HTML filter written in PHP",
+            "homepage": "http://htmlpurifier.org/",
+            "keywords": [
+                "html"
+            ],
+            "time": "2013-11-30 08:25:19"
+        },
+        {
             "name": "kriswallsmith/assetic",
             "version": "v1.1.2",
             "source": {
@@ -381,6 +473,43 @@
             "time": "2013-08-31 23:46:48"
         },
         {
+            "name": "ryu818/tiny-mce",
+            "version": "1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ryu818/TinyMCE.git",
+                "reference": "027bfbe5a53dc8e7d21f1e5fbf38637f159d0ce3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ryu818/TinyMCE/zipball/027bfbe5a53dc8e7d21f1e5fbf38637f159d0ce3",
+                "reference": "027bfbe5a53dc8e7d21f1e5fbf38637f159d0ce3",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "*",
+                "php": ">=5.3.0"
+            },
+            "type": "cakephp-plugin",
+            "extra": {
+                "installer-name": "TinyMCE"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Cake Development Corporation",
+                    "email": "team@cakedc.com",
+                    "homepage": "http://cakedc.com"
+                }
+            ],
+            "description": "The purpose of placing TinyMCE in a plugin is to keep it separate from a themed view, the regular webroot or the app in general, which makes it easier to update and overall follows the idea of keeping the code clean and modular.",
+            "homepage": "http://github.com/CakeDC/TinyMCE",
+            "time": "2014-05-20 07:45:09"
+        },
+        {
             "name": "symfony/process",
             "version": "v2.4.4",
             "target-dir": "Symfony/Component/Process",
@@ -473,98 +602,6 @@
         }
     ],
     "packages-dev": [
-        {
-            "name": "burzum/cakephp-html-purifier",
-            "version": "dev-myFeature",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/ryu818/cakephp-html-purifier.git",
-                "reference": "4035d738ffc69446659ce241a693a445ee633b82"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/ryu818/cakephp-html-purifier/zipball/b1c54652e8ed4760a232f945e1bd160cc887a275",
-                "reference": "4035d738ffc69446659ce241a693a445ee633b82",
-                "shasum": ""
-            },
-            "require": {
-                "composer/installers": "*",
-                "ezyang/htmlpurifier": "*",
-                "php": ">=5.3.2"
-            },
-            "type": "cakephp-plugin",
-            "extra": {
-                "installer-name": "HtmlPurifier"
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Florian Krämer",
-                    "email": "florian.kraemer@kreative-design.net",
-                    "homepage": "http://florian-kraemer.net",
-                    "role": "Author"
-                }
-            ],
-            "description": "HtmlPurifier plugin for CakePHP",
-            "homepage": "http://github.com/burzum/cakephp-html-purifier",
-            "keywords": [
-                "Purifier",
-                "html",
-                "markup",
-                "sensitization",
-                "tidy",
-                "validation"
-            ],
-            "time": "2014-04-04 01:44:44"
-        },
-        {
-            "name": "ezyang/htmlpurifier",
-            "version": "v4.6.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/ezyang/htmlpurifier.git",
-                "reference": "6f389f0f25b90d0b495308efcfa073981177f0fd"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/ezyang/htmlpurifier/zipball/6f389f0f25b90d0b495308efcfa073981177f0fd",
-                "reference": "6f389f0f25b90d0b495308efcfa073981177f0fd",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.2"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "HTMLPurifier": "library/"
-                },
-                "files": [
-                    "library/HTMLPurifier.composer.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "LGPL"
-            ],
-            "authors": [
-                {
-                    "name": "Edward Z. Yang",
-                    "email": "admin@htmlpurifier.org",
-                    "homepage": "http://ezyang.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Standards compliant HTML filter written in PHP",
-            "homepage": "http://htmlpurifier.org/",
-            "keywords": [
-                "html"
-            ],
-            "time": "2013-11-30 08:25:19"
-        },
         {
             "name": "guzzle/guzzle",
             "version": "v3.9.1",
@@ -694,43 +731,6 @@
                 "psr-3"
             ],
             "time": "2012-12-21 11:40:51"
-        },
-        {
-            "name": "ryu818/tiny-mce",
-            "version": "dev-myFeature",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/ryu818/TinyMCE.git",
-                "reference": "dce0bf9cdec71b83168c8f55d94efb33499322bb"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/ryu818/TinyMCE/zipball/85689bb8b9ae6b1a89fe04484415c00f2887b77f",
-                "reference": "dce0bf9cdec71b83168c8f55d94efb33499322bb",
-                "shasum": ""
-            },
-            "require": {
-                "composer/installers": "*",
-                "php": ">=5.3.0"
-            },
-            "type": "cakephp-plugin",
-            "extra": {
-                "installer-name": "TinyMCE"
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Cake Development Corporation",
-                    "email": "team@cakedc.com",
-                    "homepage": "http://cakedc.com"
-                }
-            ],
-            "description": "The purpose of placing TinyMCE in a plugin is to keep it separate from a themed view, the regular webroot or the app in general, which makes it easier to update and overall follows the idea of keeping the code clean and modular.",
-            "homepage": "http://github.com/CakeDC/TinyMCE",
-            "time": "2013-11-17 22:11:30"
         },
         {
             "name": "satooshi/php-coveralls",
@@ -1121,8 +1121,6 @@
     ],
     "minimum-stability": "stable",
     "stability-flags": {
-        "ryu818/tiny-mce": 20,
-        "burzum/cakephp-html-purifier": 20,
         "satooshi/php-coveralls": 20
     },
     "platform": [
