@@ -479,12 +479,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ryu818/cakephp-html-purifier.git",
-                "reference": "b1c54652e8ed4760a232f945e1bd160cc887a275"
+                "reference": "4035d738ffc69446659ce241a693a445ee633b82"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/ryu818/cakephp-html-purifier/zipball/b1c54652e8ed4760a232f945e1bd160cc887a275",
-                "reference": "b1c54652e8ed4760a232f945e1bd160cc887a275",
+                "reference": "4035d738ffc69446659ce241a693a445ee633b82",
                 "shasum": ""
             },
             "require": {
@@ -518,7 +518,7 @@
                 "tidy",
                 "validation"
             ],
-            "time": "2014-05-20 08:34:47"
+            "time": "2014-04-04 01:44:44"
         },
         {
             "name": "ezyang/htmlpurifier",
@@ -701,12 +701,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ryu818/TinyMCE.git",
-                "reference": "85689bb8b9ae6b1a89fe04484415c00f2887b77f"
+                "reference": "dce0bf9cdec71b83168c8f55d94efb33499322bb"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/ryu818/TinyMCE/zipball/85689bb8b9ae6b1a89fe04484415c00f2887b77f",
-                "reference": "85689bb8b9ae6b1a89fe04484415c00f2887b77f",
+                "reference": "dce0bf9cdec71b83168c8f55d94efb33499322bb",
                 "shasum": ""
             },
             "require": {
@@ -730,7 +730,7 @@
             ],
             "description": "The purpose of placing TinyMCE in a plugin is to keep it separate from a themed view, the regular webroot or the app in general, which makes it easier to update and overall follows the idea of keeping the code clean and modular.",
             "homepage": "http://github.com/CakeDC/TinyMCE",
-            "time": "2014-05-20 06:42:22"
+            "time": "2013-11-17 22:11:30"
         },
         {
             "name": "satooshi/php-coveralls",

@@ -15,7 +15,7 @@ class RichTextEditorHelper extends AppHelper {
  *
  * @var array
  */
-	public $helpers = array('TinyMce.TinyMCE');
+	public $helpers = array('TinyMCE.TinyMCE');
 
 /**
  * Configuration

@@ -149,7 +149,7 @@ class RichTextEditorHelperTest extends CakeTestCase {
 		$this->RichTextEditor->Html->expects($this->any())
 			->method('script')
 			->with(
-				'/TinyMce/js/tiny_mce/tiny_mce.js',
+				'/TinyMCE/js/tiny_mce/tiny_mce.js',
 				array('inline' => false));
 		$this->RichTextEditor->beforeRender('test.ctp');
 	}
