@@ -64,6 +64,7 @@ class RichTextEditorHelperTest extends CakeTestCase {
  * @access public
  */
 	public function testEditor() {
+		$_SERVER['HTTP_X_REQUESTED_WITH'] = 'XMLHttpRequest';
 		$this->RichTextEditor->Html->expects($this->any())
 			->method('scriptBlock')
 			->with(
@@ -97,6 +98,17 @@ class RichTextEditorHelperTest extends CakeTestCase {
 
 		$this->expectException('OutOfBoundsException');
 		$this->RichTextEditor->editor('invalid-config');
+	}
+
+/**
+ * testEditorAjax
+ *
+ * @return void
+ * @access public
+ */
+	public function testEditorAjax() {
+		$_SERVER['HTTP_X_REQUESTED_WITH'] = 'XMLHttpRequest';
+		$this->testEditor();
 	}
 
 /**
@@ -140,18 +152,41 @@ class RichTextEditorHelperTest extends CakeTestCase {
 	}
 
 /**
+ * testEditorWithDefaultsAjax
+ *
+ * @return void
+ * @access public
+ */
+	public function testEditorWithDefaultsAjax() {
+		$_SERVER['HTTP_X_REQUESTED_WITH'] = 'XMLHttpRequest';
+		$this->testEditorWithDefaults();
+	}
+
+/**
  * testBeforeRender
  *
  * @return void
  * @access public
  */
 	public function testBeforeRender() {
+		$_SERVER['HTTP_X_REQUESTED_WITH'] = 'XMLHttpRequest';
 		$this->RichTextEditor->Html->expects($this->any())
 			->method('script')
 			->with(
 				'/TinyMCE/js/tiny_mce/tiny_mce.js',
 				array('inline' => false));
 		$this->RichTextEditor->beforeRender('test.ctp');
+	}
+
+/**
+ * testBeforeRenderAjax
+ *
+ * @return void
+ * @access public
+ */
+	public function testBeforeRenderAjax() {
+		$_SERVER['HTTP_X_REQUESTED_WITH'] = 'XMLHttpRequest';
+		$this->testBeforeRender();
 	}
 
 }
