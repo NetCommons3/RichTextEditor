@@ -2,6 +2,11 @@
     "name": "netcommons/rich-text-editor",
     "description": "RichTextEditorPlugin for Cakephp",
     "homepage": "http://www.netcommons.org/",
+    "extra": {
+        "installer-paths": {
+            "app/Plugin/{$name}": ["type:cakephp-plugin"]
+        }
+    },
     "require": {
         "cakephp/cakephp":              "~2.4",
         "cakephp/debug_kit":            "~2.2",
@@ -12,6 +17,7 @@
         "burzum/cakephp-html-purifier": "0.0.0"
     },
     "require-dev": {
+        "mustangostang/spyc":     "dev-master",
         "satooshi/php-coveralls": "dev-master"
     },
     "license": "NetCommons License",
