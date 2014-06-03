@@ -48,6 +48,7 @@ class RichTextEditorHelper extends AppHelper {
  * @see http://www.tinymce.com/wiki.php/Configuration for a list of keys
  * @param mixed If array camel cased TinyMCE Init config keys, if string it checks if a config with that name exists
  * @return void
+ * @throws OutOfBoundsException
  */
 	private function __editorTinyMCE($options = array()) {
 		if (is_string($options)) {
