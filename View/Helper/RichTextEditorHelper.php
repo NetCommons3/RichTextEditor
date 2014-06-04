@@ -44,7 +44,7 @@ class RichTextEditorHelper extends AppHelper {
 
 /**
  * Adds a new editor to the script block in the head
- * Ajax対応版
+ * Ajax,requestAction対応版
  * @see http://www.tinymce.com/wiki.php/Configuration for a list of keys
  * @param mixed If array camel cased TinyMCE Init config keys, if string it checks if a config with that name exists
  * @return void
@@ -67,8 +67,8 @@ class RichTextEditorHelper extends AppHelper {
 		// remove last comma from lines to avoid the editor breaking in Internet Explorer
 		$lines = rtrim($lines);
 		$lines = rtrim($lines, ',');
-		// Ajax対応
-		if ($this->request->is('ajax')) {
+		// requestActionで呼ばれた場合、scriptBlockで上部には表示されないため、Ajaxかどうかにかかわらず、通す。
+		//if ($this->request->is('ajax')) {
 			$base = $this->Html->url('/', true) . 'TinyMCE/js/tiny_mce/';
 			$js = $base . 'tiny_mce_src.js';
 			echo $this->Html->scriptBlock('if (typeof tinymce == "undefined") {
@@ -77,8 +77,8 @@ class RichTextEditorHelper extends AppHelper {
 				tinymce.baseURL = "' . $base . '";
 			});$.ajaxSetup({async: true}); } tinymce.init({' . "\n" . $lines . "\n" . '});');
 			return;
-		}
-		$this->Html->scriptBlock('tinymce.init({' . "\n" . $lines . "\n" . '});' . "\n", array('inline' => false));
+		//}
+		//$this->Html->scriptBlock('tinymce.init({' . "\n" . $lines . "\n" . '});' . "\n", array('inline' => false));
 	}
 
 /**
@@ -94,7 +94,7 @@ class RichTextEditorHelper extends AppHelper {
 
 /**
  * beforeRender callback
- * Ajax対応版
+ * Ajax,requestAction対応版
  * @param string $viewFile The view file that is going to be rendered
  *
  * @return void
@@ -104,10 +104,10 @@ class RichTextEditorHelper extends AppHelper {
 		if ($appOptions !== false && is_array($appOptions)) {
 			$this->_defaults = $appOptions;
 		}
-		if ($this->request->is('ajax')) {
-			return;
-		}
-		$this->Html->script('/TinyMCE/js/tiny_mce/tiny_mce.js', array('inline' => false));
+		//if ($this->request->is('ajax')) {
+		//	return;
+		//}
+		//$this->Html->script('/TinyMCE/js/tiny_mce/tiny_mce.js', array('inline' => false));
 	}
 
 /**
